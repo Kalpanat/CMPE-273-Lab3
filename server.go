@@ -54,7 +54,7 @@ func handleGetAllKey1(res http.ResponseWriter, req *http.Request) {
 		var jsonStr string
 		jsonStr+=`[`
 		for key, value := range server3000map {
-			jsonStr+= `{"key:"`+strconv.Itoa(key)+`,"value:":"`+value+`"},`
+			jsonStr+= `{"key":`+strconv.Itoa(key)+`,"value:":"`+value+`"},`
     	}
     	jsonStr=jsonStr[0:len(jsonStr)-1]
     	jsonStr+=`]`
@@ -91,7 +91,7 @@ func handleGetAllKey2(res http.ResponseWriter, req *http.Request) {
 		var jsonStr string
 		jsonStr+=`[`
 		for key, value := range server3001map {
-			jsonStr+= `{"key:"`+strconv.Itoa(key)+`,"value:":"`+value+`"},`
+			jsonStr+= `{"key":`+strconv.Itoa(key)+`,"value:":"`+value+`"},`
     	}
     	jsonStr=jsonStr[0:len(jsonStr)-1]
     	jsonStr+=`]`
@@ -127,7 +127,7 @@ func handleGetAllKey3(res http.ResponseWriter, req *http.Request) {
 		var jsonStr string
 		jsonStr+=`[`
 		for key, value := range server3002map {
-			jsonStr+= `{"key:"`+strconv.Itoa(key)+`,"value:":"`+value+`"},`
+			jsonStr+= `{"key":`+strconv.Itoa(key)+`,"value:":"`+value+`"},`
     	}
     	jsonStr=jsonStr[0:len(jsonStr)-1]
     	jsonStr+=`]`
